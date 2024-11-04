@@ -1,4 +1,5 @@
 const abtme = document.getElementById("abtme");
+const contactme = document.getElementById("contactme");
 const mainheader = document.getElementById("mainheader");
 const mainparagraph = document.getElementById("mainparagraph");
 const home = document.getElementById("home");
@@ -27,5 +28,10 @@ abtme.onclick = function(){
 home.onclick = function(){
     mainheader.textContent = "Welcome To My Website!";
     mainparagraph.textContent = "Hello Visitor! Welcome aboard on my website. Here you will find what I am currently doing and what I am up to. If I do anything cool, it will most likely be here. Go ahead and check my site. Use the navigation bar on top to see some cool stuff. Enjoy your stay!"
+    qna.innerHTML = ``;
+}
+contactme.onclick = function(){
+    mainheader.textContent = "Want To Contact Me? Here's How:";
+    mainparagraph.innerHTML = `My Links:- <br> Email:- <a href="mailto:lavaixmc@gmail.com">lavaixmc@gmail.com</a><br>`;
     qna.innerHTML = ``;
 }
